@@ -1,0 +1,135 @@
+{
+  "personalInfo": {
+    "name": "Manouk van Draanen",
+    "title": "Software Engineer",
+    "subTitle": "Full-Stack Engineering",
+    "bio": "Architecting robust, scalable software solutions with technical precision and elegant design. Bridging the gap between complex backend logic and high-end user experiences.",
+    "email": "mvandraanen@hotmail.com",
+    "location": "Amsterdam, Netherlands",
+    "experienceYears": "5+ Years",
+    "activeStatus": "Active"
+  },
+  "projects": [
+    {
+      "id": "omnichannel-dashboard",
+      "title": "OmniChannel Enterprise Dashboard",
+      "description": "Unified management system for enterprise-level resource tracking with real-time Azure integration.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuADxNudoJn1rArfEXtd8CD6wL6QA-I673XijhO2WufamTxBNchJ2q0zb68QTTunpRPjXlKU9Tdbrd_XNSwUz1wuZPxnxVVxdmqHzXe96OKjBATM-6FfHqP5xq1EZaSe_P7I1vj-7tn9zHq4wRGqqQn8rBHl_LU_uiBlB58b7INnmsmapqsPQBd87BpRMILgD2W0faXEdvSdZsRtHjSzXhbk3Gx2v7alf_jia1_wM8X8e5wbj5Um8UnzVw",
+      "tags": [".NET CORE", "AZURE", "NEXT.JS"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": "cicd-pipeline",
+      "title": "Automated CI/CD Pipeline Architect",
+      "description": "Custom deployment orchestrator reducing build times by 40% using containerized microservices.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBDJRYGe5cP5tHb0z56E7ulctG--BDO3yyDew6sMQDVNcmkzcCcDAMV5sFNMwOA3HWQ86p-7Ef-B3fy2Z4wVhlG90LZc9zuqhjZdmyB-I1tvEVgMybw6NYX4IEyF0EdtCGOcrAWA3e7691peqUEcsEDN8_lIekAmFhgAq2gPga8R_0DbPXQAVwrTVHCQIqJWiAMfdoJwnsptHcPwPem9kQAFSRaaWZoOSlygX9vqoIkvno7ZkK7RRvC9g",
+      "tags": ["REACT", "POSTGRESQL", "DOCKER"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": "servicenow-extension",
+      "title": "ServiceNow ITSM Extension",
+      "description": "Custom scoped application for automated ticket routing and advanced performance reporting.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBFDTESc6azRkqVFS9XgBr-Ix9qdKhmS_MW4ll3x3j9rSUUjW00Z4Ev7eIbbm9KJQtSL2zelfSQsK5dXZB-Nir7dNlQL2bomAtzSta8-ZoUBT-YFvrIO1OF56UcogA5NmRi0RIlnZX_klEYFZutkjqVP4YxIEhMw_l0X0AEImFJQ9KPnUTb7BEKHB8dk2dzOrmTHUnW2jsLpkpZiFRU513EzJ7V4V60BJ-wzHiSB8x1gFPrUuprD16Mhw",
+      "tags": ["SERVICENOW", "JAVASCRIPT"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": "state-library",
+      "title": "State Management Pattern Library",
+      "description": "Open-source collection of performant state management patterns for large-scale React apps.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCq4VE4q3BMCIovAtdHb8zIkOmzbxqugxfKnxn4xDBk5CsKOZrQhMwO84QiBSuO4IlPpw74H-FkWUZySDrzBXmzwpwKx2rvwAFfAJpcFk8bxI07P51vOjsepETRVF_8Rnh7SmRtAw5EmbzyXAwYf90kaUU1gh1q8HL9fjAMSq8xyzIRYIbB455Ttf6Dx8UzBGhLDu-aHHhHc3TLwAyGibfyWC_w_At_zH6UDSX13H9p8d914mn-fiSSUA",
+      "tags": ["TYPESCRIPT", "REDUX"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "skills": [
+        { "name": "React & Next.js", "level": 95, "description": "Server Components, routing, state architecture, and optimization." },
+        { "name": "TypeScript", "level": 90, "description": "Advanced type safety, generics, utility types, and strict compilation." },
+        { "name": "Tailwind CSS", "level": 95, "description": "Responsive custom layout systems, custom themes, utility-first UI." },
+        { "name": "Framer Motion", "level": 85, "description": "Fluid micro-interactions, layout transitions, physics-based animations." }
+      ]
+    },
+    {
+      "category": "Backend",
+      "skills": [
+        { "name": ".NET Core & C#", "level": 90, "description": "Clean architecture, Web APIs, Entity Framework, concurrency, and Linq." },
+        { "name": "Node.js", "level": 85, "description": "Express, asynchronous middleware, ES Modules, and backend script utilities." },
+        { "name": "SQL & NoSQL", "level": 85, "description": "PostgreSQL queries, index optimization, MongoDB and Redis storage schemas." },
+        { "name": "REST & GraphQL", "level": 90, "description": "API contract design, routing protocols, query optimization, and payloads." }
+      ]
+    },
+    {
+      "category": "Tools",
+      "skills": [
+        { "name": "Azure DevOps", "level": 85, "description": "Work item tracking, automated repos, pipeline management, board agile flows." },
+        { "name": "ServiceNow", "level": 80, "description": "Scoped application design, integration interfaces, workflows, and catalog scripts." },
+        { "name": "Docker & Kubernetes", "level": 85, "description": "Multi-stage builds, container isolation, cluster configs, ingress controls." },
+        { "name": "Git / GitHub", "level": 95, "description": "Branching protocols, merge conflicts, actions, PR reviews, tag releases." }
+      ]
+    },
+    {
+      "category": "Cloud",
+      "skills": [
+        { "name": "Azure Services", "level": 90, "description": "App Services, Azure Functions, Key Vault, CosmosDB, event integrations." },
+        { "name": "CI/CD Pipelines", "level": 85, "description": "Build/release orchestration, self-hosted runners, automated unit testing." },
+        { "name": "Serverless Architecture", "level": 85, "description": "Event-driven compute, API Gateway routing, cloud triggers, scaling." },
+        { "name": "Terraform", "level": 80, "description": "Infrastructure as Code, state isolation, environment provisioning specs." }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "period": "2022 — PRESENT",
+      "role": "Senior Software Engineer",
+      "company": "Enterprise Solutions Corp",
+      "description": "Leading a team of 6 engineers in migrating legacy .NET applications to a modern microservices architecture on Azure.",
+      "achievements": [
+        "Spearheaded transition of monolithic .NET Framework codebase to ASP.NET Core microservices, cutting legacy infrastructure costs by 32%.",
+        "Pioneered internal developer platform template adopting strict TypeScript patterns, shortening onboarding cycles for new engineers by 50%.",
+        "Established high-concurrency event messaging pipelines processing up to 500,000 daily messages using Azure Service Bus."
+      ],
+      "techStack": [".NET Core", "C#", "Azure Services", "Terraform", "Next.js", "PostgreSQL"]
+    },
+    {
+      "period": "2019 — 2022",
+      "role": "Full Stack Developer",
+      "company": "Innovate Tech Labs",
+      "description": "Developed core SaaS features using React and Node.js. Optimized database queries resulting in 30% faster load times.",
+      "achievements": [
+        "Authored highly optimized full-text searching functionality in PostgreSQL, reducing query execution delays from 1.2s to 80ms.",
+        "Refactored multi-tenant state management workflows utilizing React and Redux, preventing duplicate network telemetry updates.",
+        "Developed custom CI/CD automation procedures with Docker, reducing average engineering release intervals by 40%."
+      ],
+      "techStack": ["React", "Node.js", "Express", "PostgreSQL", "Docker", "Redux"]
+    },
+    {
+      "period": "2017 — 2019",
+      "role": "Software Engineer Intern",
+      "company": "Global Systems Inc",
+      "description": "Supported the development of internal tools and automated testing suites for enterprise ERP systems.",
+      "achievements": [
+        "Built automated End-to-End browser test sequences covering core invoicing journeys, blocking 15+ production-critical regressions.",
+        "Maintained internal administrative inventory panels, modernizing deprecated client-side routing modules.",
+        "Created custom database seeding CLI scripts in Node.js, accelerating local sandbox setups by 5x."
+      ],
+      "techStack": ["JavaScript", "HTML/CSS", "Node.js", "ServiceNow", "Jest"]
+    }
+  ],
+  "education": {
+    "degree": "M.S. in Software Engineering",
+    "institution": "Technical University of Delft",
+    "period": "2013 — 2017",
+    "certifications": [
+      "Microsoft Azure Solutions Architect Expert",
+      "Certified ScrumMaster (CSM)"
+    ]
+  }
+}
