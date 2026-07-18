@@ -27,37 +27,66 @@ export default function ContactSection() {
     }
   }, []);
 
-  const handleSubmit = (e: FormEvent) => {
+  const [showError, setShowError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) return;
 
     setIsSubmitting(true);
+    setShowSuccess(false);
+    setShowError(false);
 
-    // Simulate Network Delay
-    setTimeout(() => {
-      const newInquiry: Inquiry = {
-        id: Math.random().toString(36).substring(2, 9),
-        name,
-        email,
-        message,
-        timestamp: new Date().toLocaleString(),
-      };
+    try {
+      const response = await fetch('https://formspree.io/f/xwpllwlw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
 
-      const updated = [newInquiry, ...inquiries];
-      setInquiries(updated);
-      localStorage.setItem('manouk_portfolio_inquiries', JSON.stringify(updated));
+      if (response.ok) {
+        const newInquiry: Inquiry = {
+          id: Math.random().toString(36).substring(2, 9),
+          name,
+          email,
+          message,
+          timestamp: new Date().toLocaleString(),
+        };
 
+        const updated = [newInquiry, ...inquiries];
+        setInquiries(updated);
+        localStorage.setItem('manouk_portfolio_inquiries', JSON.stringify(updated));
+
+        setShowSuccess(true);
+
+        // Reset form
+        setName('');
+        setEmail('');
+        setMessage('');
+
+        // Auto clear success message after 5 seconds
+        setTimeout(() => setShowSuccess(false), 5000);
+      } else {
+        const data = await response.json();
+        const msg = data?.error || (data?.errors && data.errors.map((err: any) => err.message).join(', ')) || 'Submission failed.';
+        setErrorMessage(msg);
+        setShowError(true);
+      }
+    } catch (err) {
+      console.error('Formspree error:', err);
+      setErrorMessage('A network error occurred. Please try again.');
+      setShowError(true);
+    } finally {
       setIsSubmitting(false);
-      setShowSuccess(true);
-
-      // Reset form
-      setName('');
-      setEmail('');
-      setMessage('');
-
-      // Auto clear success message after 5 seconds
-      setTimeout(() => setShowSuccess(false), 5000);
-    }, 1200);
+    }
   };
 
   const deleteInquiry = (id: string) => {
@@ -167,7 +196,7 @@ export default function ContactSection() {
                 />
               </div>
 
-              {/* Success Notice inside form */}
+              {/* Success and Error Notices inside form */}
               <AnimatePresence>
                 {showSuccess && (
                   <motion.div
@@ -179,7 +208,24 @@ export default function ContactSection() {
                     <CheckCircle className="w-5 h-5 text-emerald-600 shrink-0" />
                     <div>
                       <strong className="block font-bold">Inquiry Sent Successfully!</strong>
-                      Your inquiry has been stored locally in browser sandbox memory. Use the view button to inspect.
+                      Your message has been sent directly to my email via Formspree.
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <AnimatePresence>
+                {showError && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    className="flex items-center gap-3 bg-red-50 border border-red-200 p-4 font-sans text-xs text-red-800 leading-relaxed"
+                  >
+                    <ShieldAlert className="w-5 h-5 text-red-600 shrink-0" />
+                    <div>
+                      <strong className="block font-bold">Failed to Send Message</strong>
+                      {errorMessage}
                     </div>
                   </motion.div>
                 )}
