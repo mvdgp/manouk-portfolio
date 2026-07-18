@@ -15,9 +15,6 @@ export default function SkillsGrid() {
       <div className="mb-16 text-center max-w-2xl mx-auto space-y-4">
         <span className="font-mono text-xs uppercase text-secondary font-bold tracking-widest block">Capabilities</span>
         <h2 className="font-headline text-3xl md:text-5xl font-extrabold text-primary">Technical Competency</h2>
-        <p className="font-sans text-base text-on-surface-variant leading-relaxed">
-          A granular map of engineering competencies, structural frameworks, and deployment workflows acquired across enterprise environments.
-        </p>
 
         {/* Dynamic Mode Switcher */}
         <div className="inline-flex border border-outline-variant p-1 bg-surface-container-low select-none mt-4">

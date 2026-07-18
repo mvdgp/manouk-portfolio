@@ -3,133 +3,198 @@
     "name": "Manouk van Draanen",
     "title": "Software Engineer",
     "subTitle": "Full-Stack Engineering",
-    "bio": "Architecting robust, scalable software solutions with technical precision and elegant design. Bridging the gap between complex backend logic and high-end user experiences.",
-    "email": "mvandraanen@hotmail.com",
+    "bio": "Versatile Software Engineer and Technical Consultant specializing in ServiceNow (SaaS), .NET, and modern front-end web development. Experienced at translating complex functional requirements into scalable, client-centric technical solutions.",
     "location": "Amsterdam, Netherlands",
     "experienceYears": "5+ Years",
-    "activeStatus": "Active"
+    "activeStatus": "Active",
+    "socials": {
+      "github": "https://github.com/mvdgp",
+      "linkedin": "https://www.linkedin.com/in/manouk-van-draanen/"
+    }
   },
   "projects": [
     {
-      "id": "omnichannel-dashboard",
-      "title": "OmniChannel Enterprise Dashboard",
-      "description": "Unified management system for enterprise-level resource tracking with real-time Azure integration.",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuADxNudoJn1rArfEXtd8CD6wL6QA-I673XijhO2WufamTxBNchJ2q0zb68QTTunpRPjXlKU9Tdbrd_XNSwUz1wuZPxnxVVxdmqHzXe96OKjBATM-6FfHqP5xq1EZaSe_P7I1vj-7tn9zHq4wRGqqQn8rBHl_LU_uiBlB58b7INnmsmapqsPQBd87BpRMILgD2W0faXEdvSdZsRtHjSzXhbk3Gx2v7alf_jia1_wM8X8e5wbj5Um8UnzVw",
-      "tags": [".NET CORE", "AZURE", "NEXT.JS"],
-      "liveUrl": "#",
-      "githubUrl": "#"
+      "id": "fietsmaatjes",
+      "title": "Fietsmaatjes Amsterdam Nieuw-Sloten",
+      "description": "A high-performance, fully configurable web platform built for a local community initiative that pairs volunteer cyclists with guests who can no longer cycle independently.",
+      "image": "https://github.com/mvdgp/portfolio/blob/main/public/Project-Fietsmaatjes-large.png?raw=true",
+      "tags": [
+        "JAVSCRIPT",
+        "NEXT.JS",
+        "REACT",
+        "TAILWIND CSS"
+      ],
+      "liveUrl": "https://fietsmaatjesamsterdamnieuw-sloten.nl/",
+      "githubUrl": "https://github.com/mvdgp/fietsmaatjes"
     },
     {
-      "id": "cicd-pipeline",
-      "title": "Automated CI/CD Pipeline Architect",
-      "description": "Custom deployment orchestrator reducing build times by 40% using containerized microservices.",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBDJRYGe5cP5tHb0z56E7ulctG--BDO3yyDew6sMQDVNcmkzcCcDAMV5sFNMwOA3HWQ86p-7Ef-B3fy2Z4wVhlG90LZc9zuqhjZdmyB-I1tvEVgMybw6NYX4IEyF0EdtCGOcrAWA3e7691peqUEcsEDN8_lIekAmFhgAq2gPga8R_0DbPXQAVwrTVHCQIqJWiAMfdoJwnsptHcPwPem9kQAFSRaaWZoOSlygX9vqoIkvno7ZkK7RRvC9g",
-      "tags": ["REACT", "POSTGRESQL", "DOCKER"],
-      "liveUrl": "#",
-      "githubUrl": "#"
+      "id": "donnybap",
+      "title": "Donnybap",
+      "description": "A high-performance, single-page landing site designed for an Amsterdam-based pop-up takeaway concept serving custom Korean Bibimbap.",
+      "image": "https://github.com/mvdgp/portfolio/blob/main/public/Project-Donnybap-large.png?raw=true",
+      "tags": [
+        "JAVASCRIPT",
+        "REACT"
+      ],
+      "liveUrl": "https://donnybap.nl/",
+      "githubUrl": "https://github.com/mvdgp/donny.bap_2024"
     },
     {
-      "id": "servicenow-extension",
-      "title": "ServiceNow ITSM Extension",
-      "description": "Custom scoped application for automated ticket routing and advanced performance reporting.",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBFDTESc6azRkqVFS9XgBr-Ix9qdKhmS_MW4ll3x3j9rSUUjW00Z4Ev7eIbbm9KJQtSL2zelfSQsK5dXZB-Nir7dNlQL2bomAtzSta8-ZoUBT-YFvrIO1OF56UcogA5NmRi0RIlnZX_klEYFZutkjqVP4YxIEhMw_l0X0AEImFJQ9KPnUTb7BEKHB8dk2dzOrmTHUnW2jsLpkpZiFRU513EzJ7V4V60BJ-wzHiSB8x1gFPrUuprD16Mhw",
-      "tags": ["SERVICENOW", "JAVASCRIPT"],
+      "id": "schengen-tracker",
+      "title": "Schengen Tracker",
+      "description": "A lightweight mobile utility application designed to help non-EU travelers monitor their stay limits and prevent visa violations within the Schengen Area.",
+      "image": "https://placehold.co/600x400?text=Demo Coming Soon",
+      "tags": [
+        "TYPESCRIPT",
+        "REACT NATIVE"
+      ],
       "liveUrl": "#",
-      "githubUrl": "#"
-    },
-    {
-      "id": "state-library",
-      "title": "State Management Pattern Library",
-      "description": "Open-source collection of performant state management patterns for large-scale React apps.",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCq4VE4q3BMCIovAtdHb8zIkOmzbxqugxfKnxn4xDBk5CsKOZrQhMwO84QiBSuO4IlPpw74H-FkWUZySDrzBXmzwpwKx2rvwAFfAJpcFk8bxI07P51vOjsepETRVF_8Rnh7SmRtAw5EmbzyXAwYf90kaUU1gh1q8HL9fjAMSq8xyzIRYIbB455Ttf6Dx8UzBGhLDu-aHHhHc3TLwAyGibfyWC_w_At_zH6UDSX13H9p8d914mn-fiSSUA",
-      "tags": ["TYPESCRIPT", "REDUX"],
-      "liveUrl": "#",
-      "githubUrl": "#"
+      "githubUrl": "https://github.com/mvdgp/schengen-tracker"
     }
   ],
   "skills": [
     {
       "category": "Frontend",
       "skills": [
-        { "name": "React & Next.js", "level": 95, "description": "Server Components, routing, state architecture, and optimization." },
-        { "name": "TypeScript", "level": 90, "description": "Advanced type safety, generics, utility types, and strict compilation." },
-        { "name": "Tailwind CSS", "level": 95, "description": "Responsive custom layout systems, custom themes, utility-first UI." },
-        { "name": "Framer Motion", "level": 85, "description": "Fluid micro-interactions, layout transitions, physics-based animations." }
+        {
+          "name": "React & Next.js",
+          "level": 95,
+          "description": "Server Components, routing, state architecture, and optimization."
+        },
+        {
+          "name": "TypeScript",
+          "level": 75,
+          "description": "Advanced type safety, generics, utility types, and strict compilation."
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 95,
+          "description": "Responsive custom layout systems, custom themes, utility-first UI."
+        }
       ]
     },
     {
       "category": "Backend",
       "skills": [
-        { "name": ".NET Core & C#", "level": 90, "description": "Clean architecture, Web APIs, Entity Framework, concurrency, and Linq." },
-        { "name": "Node.js", "level": 85, "description": "Express, asynchronous middleware, ES Modules, and backend script utilities." },
-        { "name": "SQL & NoSQL", "level": 85, "description": "PostgreSQL queries, index optimization, MongoDB and Redis storage schemas." },
-        { "name": "REST & GraphQL", "level": 90, "description": "API contract design, routing protocols, query optimization, and payloads." }
+        {
+          "name": ".NET Core & C#",
+          "level": 20,
+          "description": "Clean architecture, Web APIs, Entity Framework, concurrency, and Linq."
+        },
+        {
+          "name": "Node.js",
+          "level": 50,
+          "description": "Express, asynchronous middleware, ES Modules, and backend script utilities."
+        },
+        {
+          "name": "REST",
+          "level": 90,
+          "description": "API contract design, routing protocols, query optimization, and payloads."
+        }
       ]
     },
     {
       "category": "Tools",
       "skills": [
-        { "name": "Azure DevOps", "level": 85, "description": "Work item tracking, automated repos, pipeline management, board agile flows." },
-        { "name": "ServiceNow", "level": 80, "description": "Scoped application design, integration interfaces, workflows, and catalog scripts." },
-        { "name": "Docker & Kubernetes", "level": 85, "description": "Multi-stage builds, container isolation, cluster configs, ingress controls." },
-        { "name": "Git / GitHub", "level": 95, "description": "Branching protocols, merge conflicts, actions, PR reviews, tag releases." }
+        {
+          "name": "Azure DevOps",
+          "level": 20,
+          "description": "Work item tracking, automated repos, pipeline management, board agile flows."
+        },
+        {
+          "name": "ServiceNow",
+          "level": 100,
+          "description": "Scoped application design, integration interfaces, workflows, and catalog scripts."
+        },
+        {
+          "name": "Git / GitHub",
+          "level": 95,
+          "description": "Branching protocols, merge conflicts, actions, PR reviews, tag releases."
+        }
       ]
     },
     {
       "category": "Cloud",
       "skills": [
-        { "name": "Azure Services", "level": 90, "description": "App Services, Azure Functions, Key Vault, CosmosDB, event integrations." },
-        { "name": "CI/CD Pipelines", "level": 85, "description": "Build/release orchestration, self-hosted runners, automated unit testing." },
-        { "name": "Serverless Architecture", "level": 85, "description": "Event-driven compute, API Gateway routing, cloud triggers, scaling." },
-        { "name": "Terraform", "level": 80, "description": "Infrastructure as Code, state isolation, environment provisioning specs." }
+        {
+          "name": "Azure Services",
+          "level": 20,
+          "description": "App Services, Azure Functions, Key Vault, CosmosDB, event integrations."
+        },
+        {
+          "name": "CI/CD Pipelines",
+          "level": 20,
+          "description": "Build/release orchestration, self-hosted runners, automated unit testing."
+        }
       ]
     }
   ],
   "experience": [
     {
-      "period": "2022 — PRESENT",
-      "role": "Senior Software Engineer",
-      "company": "Enterprise Solutions Corp",
-      "description": "Leading a team of 6 engineers in migrating legacy .NET applications to a modern microservices architecture on Azure.",
+      "period": "2025 — PRESENT",
+      "role": "Software Engineer",
+      "company": "Cegeka",
+      "description": "Led the development and maintenance of a mission-critical .NET framework and B2B integration application facilitating partner asset procurement for physical telecommunications infrastructure.",
       "achievements": [
-        "Spearheaded transition of monolithic .NET Framework codebase to ASP.NET Core microservices, cutting legacy infrastructure costs by 32%.",
-        "Pioneered internal developer platform template adopting strict TypeScript patterns, shortening onboarding cycles for new engineers by 50%.",
-        "Established high-concurrency event messaging pipelines processing up to 500,000 daily messages using Azure Service Bus."
+        "Engineered custom .NET applications to automate the ordering, validation, and tracking of physical hardware assets required for enterprise digital service delivery.",
+        "Streamlined complex external API integrations with telecom partners, ensuring precise hardware configurations and seamless data exchanges across distributed inventory networks.",
+        "Optimized resource allocation and delivery pipeline logic, significantly reducing deployment friction and latency for physical service handovers."
       ],
-      "techStack": [".NET Core", "C#", "Azure Services", "Terraform", "Next.js", "PostgreSQL"]
+      "techStack": [
+        ".NET Core",
+        "C#",
+        "Azure DevOps",
+        "Dapr"
+      ]
     },
     {
-      "period": "2019 — 2022",
-      "role": "Full Stack Developer",
-      "company": "Innovate Tech Labs",
-      "description": "Developed core SaaS features using React and Node.js. Optimized database queries resulting in 30% faster load times.",
+      "period": "2024 — 2025",
+      "role": "Application Developer",
+      "company": "DevoTeam",
+      "description": "Led the architectural design and deployment of enterprise Common Service Data Model (CSDM) frameworks and secure API integrations within the ServiceNow platform.",
       "achievements": [
-        "Authored highly optimized full-text searching functionality in PostgreSQL, reducing query execution delays from 1.2s to 80ms.",
-        "Refactored multi-tenant state management workflows utilizing React and Redux, preventing duplicate network telemetry updates.",
-        "Developed custom CI/CD automation procedures with Docker, reducing average engineering release intervals by 40%."
+        "Architected and implemented a structured CSDM framework, aligning IT infrastructure with business services to drastically improve configuration item (CI) traceability.",
+        "Designed and engineered secure, high-performance REST/SOAP API integrations to seamlessly synchronize ServiceNow with critical third-party enterprise systems.",
+        "Spearheaded platform security hardening and data access controls, ensuring strict compliance with enterprise governance and data protection standards."
       ],
-      "techStack": ["React", "Node.js", "Express", "PostgreSQL", "Docker", "Redux"]
+      "techStack": [
+        "ServiceNow",
+        "Flow Designer",
+        "UI Builder",
+        "REST APIs",
+        "Automated Test Framework",
+        "JavaScript"
+      ]
     },
     {
-      "period": "2017 — 2019",
-      "role": "Software Engineer Intern",
-      "company": "Global Systems Inc",
-      "description": "Supported the development of internal tools and automated testing suites for enterprise ERP systems.",
+      "period": "2021 — 2024",
+      "role": "Application Developer",
+      "company": "Cegeka",
+      "description": "Led the technical refinement, architectural design, and end-to-end development of custom ServiceNow solutions orchestrating nationwide digital service delivery.",
       "achievements": [
-        "Built automated End-to-End browser test sequences covering core invoicing journeys, blocking 15+ production-critical regressions.",
-        "Maintained internal administrative inventory panels, modernizing deprecated client-side routing modules.",
-        "Created custom database seeding CLI scripts in Node.js, accelerating local sandbox setups by 5x."
+        "Collaborated with business stakeholders to refine complex functional requirements into production-ready technical architecture on the ServiceNow platform.",
+        "Engineered core workflow automation and orchestration logic responsible for provisioning multi-play digital services, including high-availability internet, VoIP, and security alarm configurations.",
+        "Served as a core technical consultant within a cross-functional team, ensuring platform scalability and alignment with strict enterprise service delivery standards."
       ],
-      "techStack": ["JavaScript", "HTML/CSS", "Node.js", "ServiceNow", "Jest"]
+      "techStack": [
+        "ServiceNow",
+        "Flow Designer",
+        "UI Builder",
+        "REST APIs",
+        "Automated Test Framework",
+        "JavaScript"
+      ]
     }
   ],
   "education": {
-    "degree": "M.S. in Software Engineering",
-    "institution": "Technical University of Delft",
-    "period": "2013 — 2017",
+    "degree": "Bachelor of Science in Media & Entertainment Management",
+    "institution": "Hogeschool InHolland, Haarlem",
+    "description": "A dynamic creative-business degree specializing in film and gaming production, paired with a specialized minor in music industry contract law.",
+    "period": "2019",
     "certifications": [
-      "Microsoft Azure Solutions Architect Expert",
-      "Certified ScrumMaster (CSM)"
+      {"name": "Certified Systems Administrator (CSA)", "issuer": "ServiceNow"},
+      {"name": "Certified Application Developer (CAD)", "issuer": "ServiceNow"},
+      {"name": "Certified Implementation Specialist (CIS) - ITSM", "issuer": "ServiceNow"} 
     ]
   }
 }

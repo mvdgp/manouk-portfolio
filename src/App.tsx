@@ -19,7 +19,7 @@ export default function App() {
   const getShortName = (nameStr: string) => {
     const parts = nameStr.split(' ');
     if (parts.length >= 2) {
-      return `${parts[0].toUpperCase()}.${parts[1][0].toUpperCase()}`;
+      return `${parts[0].toUpperCase()}`;
     }
     return nameStr.toUpperCase();
   };
@@ -78,24 +78,20 @@ export default function App() {
           {/* External links */}
           <div className="flex gap-8 font-mono text-xs uppercase tracking-wider">
             <a
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              href={personalInfo.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               className="nav-link-hover text-on-surface-variant hover:text-secondary transition-colors duration-200 font-bold"
             >
               LinkedIn
             </a>
             <a
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              href={personalInfo.socials.github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="nav-link-hover text-on-surface-variant hover:text-secondary transition-colors duration-200 font-bold"
             >
               GitHub
-            </a>
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="nav-link-hover text-on-surface-variant hover:text-secondary transition-colors duration-200 font-bold"
-            >
-              Email
             </a>
           </div>
         </div>

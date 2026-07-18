@@ -20,9 +20,6 @@ export default function ProfessionalJourney() {
           <h2 className="font-headline text-3xl md:text-5xl font-extrabold text-primary mb-4">
             Professional Journey
           </h2>
-          <p className="font-sans text-base text-on-surface-variant leading-relaxed">
-            A chronological timeline of building production infrastructure, establishing agile engineering practices, and driving business values.
-          </p>
         </div>
 
         {/* Timeline Path */}
@@ -145,7 +142,7 @@ export default function ProfessionalJourney() {
                   {education.institution}
                 </p>
                 <p className="font-sans text-xs text-on-surface-variant/80 leading-relaxed pt-2">
-                  Focused on advanced software methodologies, distributed systems, and modern software architectures at the top-tier technical research university.
+                  {education.description}
                 </p>
               </div>
             </div>
@@ -161,14 +158,14 @@ export default function ProfessionalJourney() {
 
               <div className="grid grid-cols-1 gap-4">
                 {education.certifications.map((cert) => (
-                  <div key={cert} className="flex items-start gap-3 p-4 bg-surface/50 border border-outline-variant/60 hover:border-secondary/40 transition-colors duration-200">
+                  <div key={cert.name} className="flex items-start gap-3 p-4 bg-surface/50 border border-outline-variant/60 hover:border-secondary/40 transition-colors duration-200">
                     <Zap className="w-4 h-4 text-secondary shrink-0 mt-0.5 animate-pulse" />
                     <div>
                       <h4 className="font-sans text-sm font-bold text-primary leading-tight">
-                        {cert}
+                        {cert.name}
                       </h4>
                       <p className="font-mono text-[9px] text-on-surface-variant/70 uppercase mt-1 tracking-wider">
-                        Professional Certification
+                        {cert.issuer}
                       </p>
                     </div>
                   </div>

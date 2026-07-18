@@ -69,26 +69,14 @@ export default function ContactSection() {
           <div className="space-y-4">
             <span className="font-mono text-xs uppercase text-secondary font-bold tracking-widest block">Inquiry</span>
             <h2 className="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tight">
-              Let's build something exceptional.
+              Let's connect.
             </h2>
             <p className="font-sans text-base text-on-surface-variant max-w-md leading-relaxed">
-              Currently open to senior engineering opportunities, microservices architecture audits, and high-impact strategic collaborations.
+              Currently open to engineering opportunities in the U.S. (San Francisco Bay Area, Austin TX, New York, Seattle or Portland).
             </p>
           </div>
 
           <div className="space-y-6 pt-4">
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="flex items-center gap-4 text-on-surface group cursor-pointer w-fit"
-            >
-              <div className="w-10 h-10 border border-outline-variant/60 flex items-center justify-center group-hover:border-secondary transition-colors duration-300">
-                <Mail className="w-4 h-4 text-secondary group-hover:rotate-6 transition-transform" />
-              </div>
-              <div>
-                <span className="block text-[10px] text-on-surface-variant uppercase tracking-wider font-mono">Direct Channel</span>
-                <span className="font-mono text-sm group-hover:text-secondary transition-colors font-semibold">{personalInfo.email}</span>
-              </div>
-            </a>
 
             <div className="flex items-center gap-4 text-on-surface group w-fit">
               <div className="w-10 h-10 border border-outline-variant/60 flex items-center justify-center">

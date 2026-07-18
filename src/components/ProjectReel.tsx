@@ -47,16 +47,13 @@ export default function ProjectReel() {
   };
 
   return (
-    <section id="projects" className="bg-surface-container py-24 overflow-hidden">
+    <section id="projects" className="bg-surface-container py-24 overflow-visible">
       <div className="max-w-[1440px] mx-auto px-6 md:px-20">
         
         {/* Section Header */}
         <div className="mb-12 border-b border-outline-variant pb-8">
           <span className="font-mono text-xs uppercase text-secondary font-bold tracking-widest block mb-2">Portfolio</span>
           <h2 className="font-headline text-3xl md:text-5xl font-extrabold text-primary mb-2">Featured Projects</h2>
-          <p className="font-sans text-base text-on-surface-variant max-w-xl">
-            A selection of engineering challenges met with clean code and strategic architecture.
-          </p>
 
           {/* Progress Tracker Bar */}
           <div className="flex items-center justify-between mt-8">
@@ -99,15 +96,15 @@ export default function ProjectReel() {
       <div
         ref={reelRef}
         onScroll={handleScroll}
-        className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-8 px-6 md:px-20 pb-12 max-w-[1440px] mx-auto scroll-smooth"
+        className="flex overflow-x-auto overflow-y-visible snap-x snap-mandatory hide-scrollbar gap-8 px-6 md:px-20 pb-12 pt-2 max-w-[1440px] mx-auto scroll-smooth"
         style={{ scrollbarWidth: 'none' }}
       >
         {projectsData.map((project) => (
           <div
             key={project.id}
-            className="flex-none w-[85vw] md:w-[480px] snap-center group"
+            className="flex-none w-[85vw] md:w-[480px] snap-center group relative"
           >
-            <div className="flex flex-col h-full bg-surface p-6 border border-transparent hover:border-secondary hover:scale-[1.01] hover:shadow-xl transition-all duration-300 ease-out">
+            <div className="flex flex-col h-full bg-surface p-6 border border-transparent hover:border-secondary hover:scale-[1.01] hover:shadow-xl transition-all duration-300 ease-out relative z-0 group-hover:z-10 overflow-visible">
               
               {/* Styled Image Preview */}
               <div className="aspect-video w-full overflow-hidden mb-6 relative bg-surface-container">

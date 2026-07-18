@@ -11,7 +11,7 @@ export default function TopNavBar() {
   const getShortName = (nameStr: string) => {
     const parts = nameStr.split(' ');
     if (parts.length >= 2) {
-      return `${parts[0].toUpperCase()}.${parts[1][0].toUpperCase()}`;
+      return `${parts[0].toUpperCase()}`;
     }
     return nameStr.toUpperCase();
   };

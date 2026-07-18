@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Printer, Mail, MapPin } from 'lucide-react';
+import { X, Printer, MapPin } from 'lucide-react';
 import { personalInfo, timelineEvents, skillsData, education } from '../data';
 
 interface ResumeModalProps {
@@ -73,10 +73,6 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   <h2 className="font-headline text-base sm:text-lg font-semibold uppercase tracking-wider text-secondary">{personalInfo.title}</h2>
                   
                   <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-xs font-mono text-on-surface-variant">
-                    <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-1.5 hover:text-secondary transition-colors">
-                      <Mail className="w-3.5 h-3.5 text-secondary" />
-                      {personalInfo.email}
-                    </a>
                     <span className="flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-secondary" />
                       {personalInfo.location}
@@ -156,10 +152,10 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     <div className="pt-1 flex flex-wrap gap-2 text-[10px] font-mono">
                       {education.certifications.map((cert) => (
                         <span
-                          key={cert}
+                          key={cert.name}
                           className="px-2 py-0.5 bg-surface-container border border-outline-variant rounded"
                         >
-                          {cert}
+                          {cert.name}
                         </span>
                       ))}
                     </div>
