@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, ChevronUp, Briefcase, Award, Zap } from 'lucide-react';
-import { timelineEvents } from '../data';
+import { timelineEvents, education } from '../data';
 
 export default function ProfessionalJourney() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0); // First one expanded by default
@@ -119,6 +119,64 @@ export default function ProfessionalJourney() {
               </div>
             );
           })}
+        </div>
+
+        {/* Education & Certifications Section */}
+        <div className="mt-20 pt-16 border-t border-outline-variant/60">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            {/* Education Block */}
+            <div className="space-y-6">
+              <div>
+                <span className="font-mono text-xs uppercase text-secondary font-bold tracking-widest block mb-2">Academics</span>
+                <h3 className="font-headline text-2xl font-extrabold text-primary flex items-center gap-2">
+                  <Briefcase className="w-5 h-5 text-secondary" /> Education
+                </h3>
+              </div>
+              
+              <div className="relative pl-6 border-l-2 border-secondary/30 space-y-1">
+                <span className="font-mono text-xs text-secondary font-bold uppercase tracking-wider">
+                  {education.period}
+                </span>
+                <h4 className="font-headline text-lg font-bold text-primary tracking-tight">
+                  {education.degree}
+                </h4>
+                <p className="font-sans text-sm text-on-surface-variant font-semibold">
+                  {education.institution}
+                </p>
+                <p className="font-sans text-xs text-on-surface-variant/80 leading-relaxed pt-2">
+                  Focused on advanced software methodologies, distributed systems, and modern software architectures at the top-tier technical research university.
+                </p>
+              </div>
+            </div>
+
+            {/* Certifications Block */}
+            <div className="space-y-6">
+              <div>
+                <span className="font-mono text-xs uppercase text-secondary font-bold tracking-widest block mb-2">Credentials</span>
+                <h3 className="font-headline text-2xl font-extrabold text-primary flex items-center gap-2">
+                  <Award className="w-5 h-5 text-secondary" /> Certifications
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 gap-4">
+                {education.certifications.map((cert) => (
+                  <div key={cert} className="flex items-start gap-3 p-4 bg-surface/50 border border-outline-variant/60 hover:border-secondary/40 transition-colors duration-200">
+                    <Zap className="w-4 h-4 text-secondary shrink-0 mt-0.5 animate-pulse" />
+                    <div>
+                      <h4 className="font-sans text-sm font-bold text-primary leading-tight">
+                        {cert}
+                      </h4>
+                      <p className="font-mono text-[9px] text-on-surface-variant/70 uppercase mt-1 tracking-wider">
+                        Professional Certification
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
