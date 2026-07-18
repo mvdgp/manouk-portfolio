@@ -33,17 +33,19 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: 20 }}
             transition={{ type: 'spring', duration: 0.5 }}
-            className="relative w-full max-w-4xl max-h-[90vh] bg-surface border border-outline-variant shadow-2xl flex flex-col z-10 overflow-hidden"
+            className="relative w-full max-w-4xl h-full max-h-[92vh] sm:max-h-[90vh] bg-surface border border-outline-variant shadow-2xl flex flex-col z-10 overflow-hidden"
           >
             {/* Header / Controls */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-outline-variant bg-surface-container-low">
-              <div className="flex items-center gap-2">
-                <span className="font-label-mono text-xs uppercase tracking-widest text-secondary font-semibold">{cvFileName}</span>
+            <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-outline-variant bg-surface-container-low gap-4">
+              <div className="flex items-center min-w-0">
+                <span className="font-label-mono text-xs uppercase tracking-widest text-secondary font-semibold truncate block">
+                  {cvFileName}
+                </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 sm:gap-3 shrink-0">
                 <button
                   onClick={handlePrint}
-                  className="flex items-center gap-1.5 px-3 py-1.5 border border-outline hover:border-secondary hover:text-secondary text-on-surface-variant font-label-mono text-xs transition-colors"
+                  className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 border border-outline hover:border-secondary hover:text-secondary text-on-surface-variant font-label-mono text-xs transition-colors shrink-0 cursor-pointer"
                   title="Print Resume"
                 >
                   <Printer className="w-3.5 h-3.5" />
@@ -51,7 +53,8 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 </button>
                 <button
                   onClick={onClose}
-                  className="p-1.5 hover:bg-surface-container-high transition-colors"
+                  className="p-1.5 hover:bg-surface-container-high transition-colors border border-outline-variant/60 rounded cursor-pointer"
+                  aria-label="Close modal"
                 >
                   <X className="w-5 h-5 text-on-surface" />
                 </button>
@@ -59,13 +62,13 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             </div>
 
             {/* Printable Area / Resume Body */}
-            <div className="flex-1 overflow-y-auto p-8 md:p-12 bg-white print:p-0 print:text-black">
-              <div className="max-w-[700px] mx-auto space-y-8 print:space-y-6" id="resume-printable">
+            <div className="flex-1 overflow-y-auto p-4 sm:p-8 md:p-12 bg-white print:p-0 print:text-black">
+              <div className="max-w-[700px] mx-auto space-y-6 sm:space-y-8 print:space-y-6" id="resume-printable">
                 
                 {/* Header */}
                 <div className="border-b border-outline-variant pb-6 space-y-2">
-                  <h1 className="font-headline text-4xl font-extrabold tracking-tighter text-primary">{personalInfo.name}</h1>
-                  <h2 className="font-headline text-lg font-semibold uppercase tracking-wider text-secondary">{personalInfo.title}</h2>
+                  <h1 className="font-headline text-2xl sm:text-4xl font-extrabold tracking-tighter text-primary">{personalInfo.name}</h1>
+                  <h2 className="font-headline text-base sm:text-lg font-semibold uppercase tracking-wider text-secondary">{personalInfo.title}</h2>
                   
                   <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-xs font-mono text-on-surface-variant">
                     <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-1.5 hover:text-secondary transition-colors">
