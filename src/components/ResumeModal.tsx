@@ -64,7 +64,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             </div>
 
             {/* Printable Area / Resume Body */}
-            <div className="flex-1 overflow-y-auto p-4 sm:p-8 md:p-12 bg-white print:p-0 print:text-black">
+            <div id="resume-printable-container" className="flex-1 overflow-y-auto p-4 sm:p-8 md:p-12 bg-white print:p-0 print:text-black">
               <div className="max-w-[700px] mx-auto space-y-6 sm:space-y-8 print:space-y-6" id="resume-printable">
                 
                 {/* Header */}
@@ -183,12 +183,14 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   display: none !important;
                 }
 
-                /* 3. Reset modal wrapper and container to be static, transparent/white, and non-scrollable */
+                /* 3. Reset modal wrapper, container, and container layers to be static, transparent/white, and non-scrollable */
                 #resume-modal-wrapper {
                   position: static !important;
                   display: block !important;
                   padding: 0 !important;
                   z-index: auto !important;
+                  background-color: white !important;
+                  background: white !important;
                 }
 
                 #resume-modal-container {
@@ -200,13 +202,24 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   border: none !important;
                   box-shadow: none !important;
                   background: white !important;
+                  background-color: white !important;
                   overflow: visible !important;
                   margin: 0 !important;
                   padding: 0 !important;
                 }
 
-                /* 4. Reset body and html backgrounds and page setups */
-                html, body {
+                #resume-printable-container {
+                  background: white !important;
+                  background-color: white !important;
+                  padding: 0 !important;
+                  margin: 0 !important;
+                  overflow: visible !important;
+                  display: block !important;
+                  height: auto !important;
+                }
+
+                /* 4. FORCE ALL PARENT CONTAINERS, BODY, AND HTML TO WHITE BACKGROUND TO PREVENT ANY COLOR LEAK */
+                html, body, #root, #root > div, [class*="min-h-screen"], [class*="bg-surface"] {
                   background-color: white !important;
                   background: white !important;
                   color: black !important;
@@ -215,6 +228,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   height: auto !important;
                   min-height: auto !important;
                   overflow: visible !important;
+                  box-shadow: none !important;
                 }
 
                 /* 5. Clean layout of the printable resume sheet */
