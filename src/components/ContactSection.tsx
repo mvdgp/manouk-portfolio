@@ -1,7 +1,6 @@
-import { useState, useEffect, FormEvent } from 'react';
+import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Mail, MapPin, Send, CheckCircle, Database, ShieldAlert, Trash2, KeyRound } from 'lucide-react';
-import { Inquiry } from '../types';
+import { Mail, MapPin, Send, CheckCircle, ShieldAlert } from 'lucide-react';
 import { personalInfo } from '../data';
 
 export default function ContactSection() {
@@ -11,22 +10,6 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   
-  // Local storage inquiry state
-  const [inquiries, setInquiries] = useState<Inquiry[]>([]);
-  const [showInbox, setShowInbox] = useState(false);
-
-  // Load existing messages on mount
-  useEffect(() => {
-    const saved = localStorage.getItem('manouk_portfolio_inquiries');
-    if (saved) {
-      try {
-        setInquiries(JSON.parse(saved));
-      } catch (err) {
-        console.error('Error loading inquiries', err);
-      }
-    }
-  }, []);
-
   const [showError, setShowError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -53,18 +36,6 @@ export default function ContactSection() {
       });
 
       if (response.ok) {
-        const newInquiry: Inquiry = {
-          id: Math.random().toString(36).substring(2, 9),
-          name,
-          email,
-          message,
-          timestamp: new Date().toLocaleString(),
-        };
-
-        const updated = [newInquiry, ...inquiries];
-        setInquiries(updated);
-        localStorage.setItem('manouk_portfolio_inquiries', JSON.stringify(updated));
-
         setShowSuccess(true);
 
         // Reset form
@@ -87,12 +58,6 @@ export default function ContactSection() {
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const deleteInquiry = (id: string) => {
-    const filtered = inquiries.filter((item) => item.id !== id);
-    setInquiries(filtered);
-    localStorage.setItem('manouk_portfolio_inquiries', JSON.stringify(filtered));
   };
 
   return (
@@ -135,19 +100,6 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-
-          {/* Local State Database Viewer trigger */}
-          {inquiries.length > 0 && (
-            <div className="pt-6">
-              <button
-                onClick={() => setShowInbox(!showInbox)}
-                className="flex items-center gap-2 px-4 py-2 border border-dashed border-outline-variant hover:border-secondary hover:text-secondary text-on-surface-variant font-mono text-xs transition-colors"
-              >
-                <KeyRound className="w-3.5 h-3.5" />
-                <span>{showInbox ? 'HIDE' : 'VIEW'} SUBMITTED INQUIRIES ({inquiries.length})</span>
-              </button>
-            </div>
-          )}
         </div>
 
         {/* Form Col */}
@@ -252,49 +204,6 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-
-      {/* Local Server Database Panel (Slides down below) */}
-      <AnimatePresence>
-        {showInbox && inquiries.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="mt-12 overflow-hidden border border-outline-variant bg-surface-container-low p-6 font-mono text-xs"
-          >
-            <div className="flex justify-between items-center border-b border-outline-variant pb-3 mb-4">
-              <div className="flex items-center gap-2">
-                <Database className="w-4 h-4 text-secondary" />
-                <span className="font-bold uppercase">LOCAL PORTABLE DATABASE (BROWSER STATE)</span>
-              </div>
-              <span className="text-[10px] text-on-surface-variant font-semibold">SANDBOX MEMORY STORAGE</span>
-            </div>
-
-            <div className="space-y-4 max-h-[300px] overflow-y-auto">
-              {inquiries.map((item) => (
-                <div key={item.id} className="border border-outline-variant p-4 bg-white space-y-2 relative group">
-                  <button
-                    onClick={() => deleteInquiry(item.id)}
-                    className="absolute top-4 right-4 text-on-surface-variant hover:text-error transition-colors p-1"
-                    title="Delete Record"
-                  >
-                    <Trash2 className="w-3.5 h-3.5" />
-                  </button>
-                  <div className="flex flex-wrap gap-x-4 text-[10px] text-secondary font-bold">
-                    <span>ID: {item.id}</span>
-                    <span>TIMESTAMP: {item.timestamp}</span>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-primary font-bold">Sender: <span className="font-sans font-medium text-on-surface-variant">{item.name} ({item.email})</span></p>
-                    <p className="text-primary font-bold">Payload Message:</p>
-                    <p className="font-sans text-on-surface-variant text-xs leading-relaxed bg-surface-container-low/50 p-2.5 border-l-2 border-secondary/40">{item.message}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }
