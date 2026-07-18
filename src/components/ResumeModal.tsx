@@ -17,9 +17,10 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
+        <div id="resume-modal-wrapper" className="fixed inset-0 z-100 flex items-center justify-center p-4">
           {/* Backdrop */}
           <motion.div
+            id="resume-modal-backdrop"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -29,6 +30,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
 
           {/* Modal Container */}
           <motion.div
+            id="resume-modal-container"
             initial={{ scale: 0.95, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: 20 }}
@@ -36,7 +38,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             className="relative w-full max-w-4xl h-full max-h-[92vh] sm:max-h-[90vh] bg-surface border border-outline-variant shadow-2xl flex flex-col z-10 overflow-hidden"
           >
             {/* Header / Controls */}
-            <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-outline-variant bg-surface-container-low gap-4">
+            <div id="resume-modal-header" className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-outline-variant bg-surface-container-low gap-4">
               <div className="flex items-center min-w-0">
                 <span className="font-label-mono text-xs uppercase tracking-widest text-secondary font-semibold truncate block">
                   {cvFileName}
@@ -170,17 +172,113 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             {/* Print Styling Override helper */}
             <style>{`
               @media print {
-                body * {
-                  visibility: hidden;
+                /* 1. Hide all main screen layout elements */
+                nav, main, footer, button {
+                  display: none !important;
                 }
-                #resume-printable, #resume-printable * {
-                  visibility: visible;
+
+                /* 2. Hide modal interactive controls and backdrop */
+                #resume-modal-backdrop,
+                #resume-modal-header {
+                  display: none !important;
                 }
+
+                /* 3. Reset modal wrapper and container to be static, transparent/white, and non-scrollable */
+                #resume-modal-wrapper {
+                  position: static !important;
+                  display: block !important;
+                  padding: 0 !important;
+                  z-index: auto !important;
+                }
+
+                #resume-modal-container {
+                  position: static !important;
+                  width: 100% !important;
+                  max-width: 100% !important;
+                  height: auto !important;
+                  max-height: none !important;
+                  border: none !important;
+                  box-shadow: none !important;
+                  background: white !important;
+                  overflow: visible !important;
+                  margin: 0 !important;
+                  padding: 0 !important;
+                }
+
+                /* 4. Reset body and html backgrounds and page setups */
+                html, body {
+                  background-color: white !important;
+                  background: white !important;
+                  color: black !important;
+                  margin: 0 !important;
+                  padding: 0 !important;
+                  height: auto !important;
+                  min-height: auto !important;
+                  overflow: visible !important;
+                }
+
+                /* 5. Clean layout of the printable resume sheet */
                 #resume-printable {
-                  position: absolute;
-                  left: 0;
-                  top: 0;
-                  width: 100%;
+                  background: white !important;
+                  color: black !important;
+                  padding: 0 !important;
+                  margin: 0 auto !important;
+                  width: 100% !important;
+                  max-width: 100% !important;
+                  box-sizing: border-box !important;
+                }
+
+                /* Compact spacing to guarantee fitting onto 1 single page */
+                #resume-printable .space-y-6,
+                #resume-printable .space-y-8 {
+                  margin-top: 0.65rem !important;
+                  margin-bottom: 0.65rem !important;
+                }
+                
+                #resume-printable .pb-6 {
+                  padding-bottom: 0.4rem !important;
+                }
+
+                #resume-printable .grid {
+                  gap: 0.4rem !important;
+                }
+
+                #resume-printable h1 {
+                  font-size: 1.8rem !important;
+                  line-height: 1.1 !important;
+                }
+
+                #resume-printable h2 {
+                  font-size: 1rem !important;
+                  line-height: 1.2 !important;
+                }
+
+                #resume-printable h3 {
+                  font-size: 0.8rem !important;
+                  line-height: 1.2 !important;
+                  margin-bottom: 0.25rem !important;
+                }
+
+                #resume-printable p, 
+                #resume-printable li, 
+                #resume-printable span, 
+                #resume-printable a {
+                  font-size: 11px !important;
+                  line-height: 1.35 !important;
+                }
+
+                #resume-printable ul {
+                  margin-top: 0.15rem !important;
+                }
+
+                #resume-printable li {
+                  margin-bottom: 0.1rem !important;
+                }
+
+                /* Standard margins for perfect printer layout */
+                @page {
+                  size: portrait;
+                  margin: 1.0cm 1.2cm;
                 }
               }
             `}</style>
