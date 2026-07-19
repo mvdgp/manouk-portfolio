@@ -10,7 +10,21 @@
     "socials": {
       "github": "https://github.com/mvdgp",
       "linkedin": "https://www.linkedin.com/in/manouk-van-draanen/"
-    }
+    },
+    "languages": [
+      {
+        "language": "English",
+        "level": "Fluent"
+      },
+      {
+        "language": "Dutch",
+        "level": "Native"
+      },
+      {
+        "language": "Spanish",
+        "level": "Intermediate"
+      }
+    ]
   },
   "projects": [
     {
@@ -134,6 +148,7 @@
       "period": "2025 — PRESENT",
       "role": "Software Engineer",
       "company": "Cegeka",
+      "location": "Zoetermeer, The Netherlands",
       "description": "Led the development and maintenance of a mission-critical .NET framework and B2B integration application facilitating partner asset procurement for physical telecommunications infrastructure.",
       "achievements": [
         "Engineered custom .NET applications to automate the ordering, validation, and tracking of physical hardware assets required for enterprise digital service delivery.",
@@ -151,6 +166,7 @@
       "period": "2024 — 2025",
       "role": "Application Developer",
       "company": "DevoTeam",
+      "location": "Amsterdam, The Netherlands",
       "description": "Led the architectural design and deployment of enterprise Common Service Data Model (CSDM) frameworks and secure API integrations within the ServiceNow platform.",
       "achievements": [
         "Architected and implemented a structured CSDM framework, aligning IT infrastructure with business services to drastically improve configuration item (CI) traceability.",
@@ -170,6 +186,7 @@
       "period": "2021 — 2024",
       "role": "Application Developer",
       "company": "Cegeka",
+      "location": "Zoetermeer, The Netherlands",
       "description": "Led the technical refinement, architectural design, and end-to-end development of custom ServiceNow solutions orchestrating nationwide digital service delivery.",
       "achievements": [
         "Collaborated with business stakeholders to refine complex functional requirements into production-ready technical architecture on the ServiceNow platform.",

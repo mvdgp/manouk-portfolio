@@ -58,6 +58,11 @@ export default function ProfessionalJourney() {
                     <p className="font-mono text-xs text-on-surface-variant font-semibold mt-1">
                       {event.company}
                     </p>
+                    {event.location?.trim() ? (
+                      <p className="font-mono text-[10px] text-on-surface-variant/80 uppercase tracking-wider mt-1">
+                        {event.location}
+                      </p>
+                    ) : null}
                   </div>
                   <div className="text-on-surface-variant/40 group-hover:text-secondary transition-colors pt-1">
                     {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}

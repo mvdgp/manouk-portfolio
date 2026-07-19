@@ -17,6 +17,7 @@ export interface TimelineEvent {
   period: string;
   role: string;
   company: string;
+  location?: string;
   description: string;
   achievements: string[];
   techStack: string[];

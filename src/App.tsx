@@ -72,7 +72,7 @@ export default function App() {
 
           {/* Copy info */}
           <p className="font-sans text-xs md:text-sm text-on-surface-variant text-center md:text-left">
-            © 2026 {personalInfo.name}. Built with Precision.
+            © 2026 {personalInfo.name}.
           </p>
 
           {/* External links */}

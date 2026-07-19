@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Cpu, Layers, Sliders, LineChart, HelpCircle, GraduationCap } from 'lucide-react';
-import { skillsData } from '../data';
+import { personalInfo, skillsData } from '../data';
 import { SkillCategory } from '../types';
 
 export default function SkillsGrid() {
@@ -124,6 +124,28 @@ export default function SkillsGrid() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <div className="mt-12 border-t border-outline-variant/40 pt-8">
+        <div className="max-w-3xl mx-auto text-center md:text-left">
+          <h3 className="font-mono text-xs uppercase tracking-widest text-secondary font-bold mb-4">Languages</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {personalInfo.languages.map((language: { language: string; level: string; details?: string }) => (
+              <motion.div
+                key={language.language}
+                whileHover={{ y: -6, scale: 1.01, boxShadow: '0 18px 40px -20px rgba(0, 0, 0, 0.22)' }}
+                transition={{ type: 'spring', stiffness: 220, damping: 20 }}
+                className="group border border-outline-variant/60 bg-surface-container-low p-4 hover:border-secondary transition-all duration-300 ease-out"
+              >
+                <p className="font-headline text-sm font-semibold text-primary transition-colors duration-300 group-hover:text-secondary">{language.language}</p>
+                <p className="mt-1 font-mono text-[11px] uppercase tracking-wider text-secondary">{language.level}</p>
+                {language.details ? (
+                  <p className="mt-2 text-sm text-on-surface-variant font-sans transition-colors duration-300 group-hover:text-primary">{language.details}</p>
+                ) : null}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Persistent Hover Helper Pane (Desktop Only) */}
       {!evalMode && (
