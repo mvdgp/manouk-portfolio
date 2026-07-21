@@ -32,7 +32,7 @@
       "id": "fietsmaatjes",
       "title": "Fietsmaatjes Amsterdam Nieuw-Sloten",
       "description": "A custom website built for a local volunteer organization that connects cycling volunteers with people who can no longer ride independently. Designed to be fast, easy to manage, and flexible enough to grow with the organization.",
-      "image": "https://github.com/mvdgp/portfolio/blob/main/public/Project-Fietsmaatjes-large.png?raw=true",
+      "image": "https://github.com/manouk-van-draanen/portfolio/blob/main/public/Project-Fietsmaatjes-large.png?raw=true",
       "tags": [
         "JAVSCRIPT",
         "NEXT.JS",
@@ -40,19 +40,19 @@
         "TAILWIND CSS"
       ],
       "liveUrl": "https://fietsmaatjesamsterdamnieuw-sloten.nl/",
-      "githubUrl": "https://github.com/mvdgp/fietsmaatjes"
+      "githubUrl": "https://github.com/manouk-van-draanen/fietsmaatjes"
     },
     {
       "id": "donnybap",
       "title": "Donnybap",
       "description": "A modern landing page created for an Amsterdam pop-up food concept specializing in customizable Korean bibimbap bowls. Built with a focus on speed, simplicity, and mobile usability.",
-      "image": "https://github.com/mvdgp/portfolio/blob/main/public/Project-Donnybap-large.png?raw=true",
+      "image": "https://github.com/manouk-van-draanen/portfolio/blob/main/public/Project-Donnybap-large.png?raw=true",
       "tags": [
         "JAVASCRIPT",
         "REACT"
       ],
       "liveUrl": "https://donnybap.nl/",
-      "githubUrl": "https://github.com/mvdgp/donny.bap_2024"
+      "githubUrl": "https://github.com/manouk-van-draanen/donny.bap_2024"
     },
     {
       "id": "schengen-tracker",
@@ -64,7 +64,7 @@
         "REACT NATIVE"
       ],
       "liveUrl": "#",
-      "githubUrl": "https://github.com/mvdgp/schengen-tracker"
+      "githubUrl": "https://github.com/manouk-van-draanen/schengen-tracker"
     }
   ],
   "skills": [
