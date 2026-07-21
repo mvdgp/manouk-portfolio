@@ -32,7 +32,7 @@
       "id": "fietsmaatjes",
       "title": "Fietsmaatjes Amsterdam Nieuw-Sloten",
       "description": "A custom website built for a local volunteer organization that connects cycling volunteers with people who can no longer ride independently. Designed to be fast, easy to manage, and flexible enough to grow with the organization.",
-      "image": "https://github.com/manouk-van-draanen/portfolio/blob/main/public/Project-Fietsmaatjes-large.png?raw=true",
+      "image": "Project-Fietsmaatjes-large.png",
       "tags": [
         "JAVSCRIPT",
         "NEXT.JS",
@@ -46,7 +46,7 @@
       "id": "donnybap",
       "title": "Donnybap",
       "description": "A modern landing page created for an Amsterdam pop-up food concept specializing in customizable Korean bibimbap bowls. Built with a focus on speed, simplicity, and mobile usability.",
-      "image": "https://github.com/manouk-van-draanen/portfolio/blob/main/public/Project-Donnybap-large.png?raw=true",
+      "image": "Project-Donnybap-large.png",
       "tags": [
         "JAVASCRIPT",
         "REACT"
