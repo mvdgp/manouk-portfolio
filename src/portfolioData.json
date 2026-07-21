@@ -5,11 +5,12 @@
     "subTitle": "Full-Stack Engineering",
     "bio": "Versatile Software Engineer and Technical Consultant specializing in ServiceNow (SaaS), .NET, and modern front-end web development. Experienced at translating complex functional requirements into scalable, client-centric technical solutions.",
     "location": "Amsterdam, Netherlands",
-    "experienceYears": "5+ Years",
+    "experienceYears": "7+ Years",
+    "expertise": ".NET Core & C#, Frontend Web Development, ServiceNow",
     "activeStatus": "Active",
     "socials": {
       "github": "https://github.com/mvdgp",
-      "linkedin": "https://www.linkedin.com/in/manouk-van-draanen/"
+      "linkedin": "https://linkedin.com/in/manouk-van-draanen/"
     },
     "languages": [
       {
@@ -201,6 +202,48 @@
         "Automated Test Framework",
         "JavaScript"
       ]
+    },
+    {
+      "period": "2021 — 2021",
+      "role": "IT Service Specialist",
+      "company": "Solimas",
+      "location": "Amsterdam, The Netherlands",
+      "description": "Provided advanced technical support and infrastructure administration within a managed services environment, combining troubleshooting expertise with automation and systems management.",
+      "achievements": [
+        "Resolved high-priority infrastructure and networking incidents impacting business-critical operations and large user groups.",
+        "Developed PowerShell automation scripts to streamline administrative processes and reduce manual effort for recurring tasks.",
+        "Managed server, endpoint, and network environments while serving as an escalation point for complex technical issues."
+      ],
+      "techStack": [
+        "PowerShell",
+        "Windows Server",
+        "Active Directory",
+        "Microsoft 365",
+        "Networking",
+        "Group Policy"
+      ]
+    },
+    {
+      "period": "2020 — 2021",
+      "role": "Service Desk Engineer",
+      "company": "PEAK-IT",
+      "location": "Naarden, The Netherlands",
+      "description": "Delivered advanced technical support and platform administration within a managed services environment, combining infrastructure expertise with automation and ServiceNow platform development.",
+      "achievements": [
+        "Resolved complex infrastructure, application, and end-user incidents across multiple client environments, frequently acting as an escalation point for technical issues.",
+        "Owned application administration and change management activities, authoring RFCs and coordinating the implementation of business-critical system changes.",
+        "Played a key role in the implementation of a new ServiceNow platform, developing custom functionality, workflows, and process improvements to support service delivery operations.",
+        "Leveraged PowerShell scripting to automate recurring administrative tasks and improve operational efficiency."
+      ],
+      "techStack": [
+        "ServiceNow",
+        "JavaScript",
+        "PowerShell",
+        "ITSM",
+        "Workflow Development",
+        "Change Management",
+        "Application Administration"
+      ]
     }
   ],
   "education": {
@@ -209,9 +252,18 @@
     "description": "A dynamic creative-business degree specializing in film and gaming production, paired with a specialized minor in music industry contract law.",
     "period": "2019",
     "certifications": [
-      {"name": "Certified Systems Administrator (CSA)", "issuer": "ServiceNow"},
-      {"name": "Certified Application Developer (CAD)", "issuer": "ServiceNow"},
-      {"name": "Certified Implementation Specialist (CIS) - ITSM", "issuer": "ServiceNow"} 
+      {
+        "name": "Certified Systems Administrator (CSA)",
+        "issuer": "ServiceNow"
+      },
+      {
+        "name": "Certified Application Developer (CAD)",
+        "issuer": "ServiceNow"
+      },
+      {
+        "name": "Certified Implementation Specialist (CIS) - ITSM",
+        "issuer": "ServiceNow"
+      }
     ]
   }
 }

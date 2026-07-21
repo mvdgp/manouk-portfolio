@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, FileText } from 'lucide-react';
-import ResumeModal from './ResumeModal';
+import { downloadResumePdf } from '../resume/downloadResumePdf';
 import { personalInfo } from '../data';
 
 export default function TopNavBar() {
   const [activeSection, setActiveSection] = useState('hero');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [resumeOpen, setResumeOpen] = useState(false);
+  const [isDownloadingResume, setIsDownloadingResume] = useState(false);
 
   const getShortName = (nameStr: string) => {
     const parts = nameStr.split(' ');
@@ -45,6 +45,18 @@ export default function TopNavBar() {
     const el = document.getElementById(sectionId);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleResumeDownload = async () => {
+    if (isDownloadingResume) return;
+
+    setIsDownloadingResume(true);
+
+    try {
+      await downloadResumePdf();
+    } finally {
+      setIsDownloadingResume(false);
     }
   };
 
@@ -126,11 +138,12 @@ export default function TopNavBar() {
 
           {/* Download Resume Button */}
           <button
-            onClick={() => setResumeOpen(true)}
+            onClick={handleResumeDownload}
+            disabled={isDownloadingResume}
             className="shimmer-btn bg-primary text-on-primary font-mono text-xs font-semibold px-4 py-2.5 hover:bg-secondary transition-all duration-300 uppercase hidden lg:flex items-center gap-2 border border-transparent active:scale-95"
           >
             <FileText className="w-3.5 h-3.5" />
-            Download Resume
+            {isDownloadingResume ? 'Preparing PDF' : 'Download Resume'}
           </button>
 
           {/* Mobile Menu Icon */}
@@ -201,22 +214,20 @@ export default function TopNavBar() {
 
             <div className="mt-8">
               <button
-                onClick={() => {
+                onClick={async () => {
                   setMobileMenuOpen(false);
-                  setResumeOpen(true);
+                  await handleResumeDownload();
                 }}
+                disabled={isDownloadingResume}
                 className="shimmer-btn w-full bg-primary text-on-primary font-mono text-sm py-4 hover:bg-secondary transition-colors uppercase tracking-widest flex items-center justify-center gap-2"
               >
                 <FileText className="w-4 h-4" />
-                Download Resume
+                {isDownloadingResume ? 'Preparing PDF' : 'Download Resume'}
               </button>
             </div>
           </nav>
         </div>
       )}
-
-      {/* Resume modal integration */}
-      <ResumeModal isOpen={resumeOpen} onClose={() => setResumeOpen(false)} />
     </>
   );
 }

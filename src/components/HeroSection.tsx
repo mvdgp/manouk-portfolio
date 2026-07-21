@@ -1,9 +1,9 @@
-import { motion } from 'motion/react';
-import { ArrowRight, Code, Terminal, Sparkles } from 'lucide-react';
+import { motion, type Variants } from 'motion/react';
+import { ArrowRight, Terminal } from 'lucide-react';
 import { personalInfo } from '../data';
 
 export default function HeroSection() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -14,7 +14,7 @@ export default function HeroSection() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 25, opacity: 0 },
     visible: {
       y: 0,
@@ -103,7 +103,7 @@ export default function HeroSection() {
         >
           <div>
             <span className="block text-[10px] text-on-surface-variant uppercase tracking-wider">Expertise</span>
-            <span className="text-xs text-primary font-semibold">.NET & React</span>
+            <span className="text-xs text-primary font-semibold">{personalInfo.expertise}</span>
           </div>
           <div className="border-x border-outline-variant/50 px-4">
             <span className="block text-[10px] text-on-surface-variant uppercase tracking-wider">Located</span>

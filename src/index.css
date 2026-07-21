@@ -98,3 +98,217 @@ body {
   background-color: #fcf9f5;
   color: #1c1c1a;
 }
+
+.resume-export-renderer {
+  position: fixed;
+  top: 0;
+  left: -100000px;
+  width: 210mm;
+  background: white;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.resume-export-flow-shell {
+  width: 210mm;
+  padding: 16mm;
+  box-sizing: border-box;
+  background: white;
+}
+
+.resume-export-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resume-export-page {
+  width: 210mm;
+  height: 297mm;
+  padding: 16mm;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  overflow: hidden;
+}
+
+.resume-export-page-body {
+  height: 100%;
+}
+
+.resume-export-page-body > * + * {
+  margin-top: 0;
+}
+
+.resume-export-content,
+.resume-export-page-body {
+  width: 178mm;
+  max-width: 178mm;
+  margin: 0;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.7pt;
+  line-height: 1.22;
+}
+
+.resume-export-content .resume-section,
+.resume-export-page-body .resume-section {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.resume-export-content .resume-section-block,
+.resume-export-page-body .resume-section-block {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.resume-export-stack > .resume-section + .resume-section,
+.resume-export-page-body > .resume-section + .resume-section {
+  margin-top: 0.72cm !important;
+}
+
+.resume-export-content .resume-section-heading,
+.resume-export-page-body .resume-section-heading {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.resume-export-content .resume-languages-grid,
+.resume-export-page-body .resume-languages-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.resume-export-content .resume-contact-links,
+.resume-export-page-body .resume-contact-links {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 0.45cm !important;
+}
+
+.resume-export-content .resume-contact-links a,
+.resume-export-page-body .resume-contact-links a {
+  font-size: 9.4pt !important;
+  white-space: nowrap !important;
+}
+
+.resume-export-content .resume-competence-grid,
+.resume-export-page-body .resume-competence-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 0.22cm 0.28cm !important;
+}
+
+.resume-export-content .resume-role,
+.resume-export-page-body .resume-role {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.resume-export-content .resume-role-list > * + *,
+.resume-export-page-body .resume-role-list > * + * {
+  margin-top: 0.46cm !important;
+}
+
+.resume-export-content .space-y-2 > * + *,
+.resume-export-page-body .space-y-2 > * + *,
+.resume-export-content .space-y-1 > * + *,
+.resume-export-page-body .space-y-1 > * + *,
+.resume-export-content .space-y-3 > * + *,
+.resume-export-page-body .space-y-3 > * + *,
+.resume-export-content .space-y-4 > * + *,
+.resume-export-page-body .space-y-4 > * + *,
+.resume-export-content .space-y-6 > * + *,
+.resume-export-page-body .space-y-6 > * + *,
+.resume-export-content .space-y-8 > * + *,
+.resume-export-page-body .space-y-8 > * + * {
+  margin-top: 0.28cm !important;
+}
+
+.resume-export-content .pb-6,
+.resume-export-page-body .pb-6 {
+  padding-bottom: 0.4cm !important;
+}
+
+.resume-export-content .grid,
+.resume-export-page-body .grid {
+  gap: 0.22cm 0.28cm !important;
+}
+
+.resume-export-content h1,
+.resume-export-page-body h1 {
+  font-size: 18pt !important;
+  line-height: 1.08 !important;
+  margin: 0 0 0.12cm !important;
+}
+
+.resume-export-content h2,
+.resume-export-page-body h2 {
+  font-size: 11.1pt !important;
+  line-height: 1.12 !important;
+  margin: 0 0 0.1cm !important;
+}
+
+.resume-export-content h3,
+.resume-export-page-body h3 {
+  font-size: 10.5pt !important;
+  line-height: 1.12 !important;
+  margin: 0 0 0.14cm !important;
+}
+
+.resume-export-content h4,
+.resume-export-page-body h4 {
+  font-size: 10.3pt !important;
+  line-height: 1.12 !important;
+  margin: 0 !important;
+}
+
+.resume-export-content p,
+.resume-export-page-body p,
+.resume-export-content li,
+.resume-export-page-body li,
+.resume-export-content span,
+.resume-export-page-body span,
+.resume-export-content a,
+.resume-export-page-body a {
+  font-size: 10.1pt !important;
+  line-height: 1.24 !important;
+  overflow-wrap: anywhere !important;
+}
+
+.resume-export-content a,
+.resume-export-page-body a {
+  color: #b45309 !important;
+  text-decoration: underline !important;
+}
+
+.resume-export-content .resume-portfolio-qr,
+.resume-export-page-body .resume-portfolio-qr,
+.resume-export-content .resume-portfolio-qr *,
+.resume-export-page-body .resume-portfolio-qr * {
+  text-decoration: none !important;
+}
+
+.resume-export-content .resume-portfolio-qr span,
+.resume-export-page-body .resume-portfolio-qr span {
+  font-size: 5pt !important;
+  padding-top: 0.05cm !important;
+  line-height: 1 !important;
+  letter-spacing: 0.01em !important;
+  color: rgb(68, 71, 72) !important;
+}
+
+.resume-export-content ul,
+.resume-export-page-body ul {
+  margin-top: 0.08cm !important;
+  padding-left: 0.34cm !important;
+}
+
+.resume-export-content li,
+.resume-export-page-body li {
+  margin-bottom: 0 !important;
+}

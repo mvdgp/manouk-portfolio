@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Cpu, Layers, Sliders, LineChart, HelpCircle, GraduationCap } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { personalInfo, skillsData } from '../data';
-import { SkillCategory } from '../types';
 
 export default function SkillsGrid() {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [hoveredSkill, setHoveredSkill] = useState<{ name: string; desc: string } | null>(null);
   const [evalMode, setEvalMode] = useState(false);
 

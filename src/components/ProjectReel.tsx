@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight, ExternalLink, Code } from 'lucide-react';
 import { projectsData } from '../data';

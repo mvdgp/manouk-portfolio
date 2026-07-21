@@ -1,6 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Mail, MapPin, Send, CheckCircle, ShieldAlert } from 'lucide-react';
+import { Github, Linkedin, MapPin, Send, CheckCircle, ShieldAlert } from 'lucide-react';
 import { personalInfo } from '../data';
 
 export default function ContactSection() {
@@ -87,6 +87,23 @@ export default function ContactSection() {
                 <span className="font-mono text-sm font-semibold">{personalInfo.location}</span>
               </div>
             </div>
+
+            <a
+              href={personalInfo.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 text-on-surface group w-fit"
+            >
+              <div className="w-10 h-10 border border-outline-variant/60 flex items-center justify-center transition-colors group-hover:border-secondary">
+                <Linkedin className="w-4 h-4 text-secondary" />
+              </div>
+              <div>
+                <span className="block text-[10px] text-on-surface-variant uppercase tracking-wider font-mono">LinkedIn</span>
+                <span className="font-mono text-sm font-semibold text-on-surface-variant transition-colors group-hover:text-primary">
+                  {personalInfo.socials.linkedin.replace(/^https?:\/\//i, '')}
+                </span>
+              </div>
+            </a>
           </div>
         </div>
 
