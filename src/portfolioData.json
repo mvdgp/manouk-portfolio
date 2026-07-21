@@ -3,7 +3,7 @@
     "name": "Manouk van Draanen",
     "title": "Software Engineer",
     "subTitle": "Full-Stack Engineering",
-    "bio": "Versatile Software Engineer and Technical Consultant specializing in ServiceNow (SaaS), .NET, and modern front-end web development. Experienced at translating complex functional requirements into scalable, client-centric technical solutions.",
+    "bio": "Software Engineer with experience building web applications, integrations, and business-critical platforms. My background spans ServiceNow, .NET, and modern front-end development. I enjoy turning complex requirements into practical solutions that are reliable, scalable, and easy to use.",
     "location": "Amsterdam, Netherlands",
     "experienceYears": "7+ Years",
     "expertise": ".NET Core & C#, Frontend Web Development, ServiceNow",
@@ -31,7 +31,7 @@
     {
       "id": "fietsmaatjes",
       "title": "Fietsmaatjes Amsterdam Nieuw-Sloten",
-      "description": "A high-performance, fully configurable web platform built for a local community initiative that pairs volunteer cyclists with guests who can no longer cycle independently.",
+      "description": "A custom website built for a local volunteer organization that connects cycling volunteers with people who can no longer ride independently. Designed to be fast, easy to manage, and flexible enough to grow with the organization.",
       "image": "https://github.com/mvdgp/portfolio/blob/main/public/Project-Fietsmaatjes-large.png?raw=true",
       "tags": [
         "JAVSCRIPT",
@@ -45,7 +45,7 @@
     {
       "id": "donnybap",
       "title": "Donnybap",
-      "description": "A high-performance, single-page landing site designed for an Amsterdam-based pop-up takeaway concept serving custom Korean Bibimbap.",
+      "description": "A modern landing page created for an Amsterdam pop-up food concept specializing in customizable Korean bibimbap bowls. Built with a focus on speed, simplicity, and mobile usability.",
       "image": "https://github.com/mvdgp/portfolio/blob/main/public/Project-Donnybap-large.png?raw=true",
       "tags": [
         "JAVASCRIPT",
@@ -57,7 +57,7 @@
     {
       "id": "schengen-tracker",
       "title": "Schengen Tracker",
-      "description": "A lightweight mobile utility application designed to help non-EU travelers monitor their stay limits and prevent visa violations within the Schengen Area.",
+      "description": "A mobile app that helps travelers keep track of their Schengen stay allowance. It calculates days spent in the Schengen Area and helps users avoid accidentally exceeding visa limits.",
       "image": "https://placehold.co/600x400?text=Demo Coming Soon",
       "tags": [
         "TYPESCRIPT",
@@ -74,17 +74,17 @@
         {
           "name": "React & Next.js",
           "level": 95,
-          "description": "Server Components, routing, state architecture, and optimization."
+          "description": "Building modern web applications with server components, routing, state management, and performance optimization."
         },
         {
           "name": "TypeScript",
           "level": 75,
-          "description": "Advanced type safety, generics, utility types, and strict compilation."
+          "description": "Strong typing, reusable utility types, generics, and maintainable codebases."
         },
         {
           "name": "Tailwind CSS",
           "level": 95,
-          "description": "Responsive custom layout systems, custom themes, utility-first UI."
+          "description": "Responsive layouts, custom design systems, and utility-first styling."
         }
       ]
     },
@@ -94,17 +94,17 @@
         {
           "name": ".NET Core & C#",
           "level": 20,
-          "description": "Clean architecture, Web APIs, Entity Framework, concurrency, and Linq."
+          "description": "Building APIs, working with Entity Framework, LINQ, and clean application architecture."
         },
         {
           "name": "Node.js",
           "level": 50,
-          "description": "Express, asynchronous middleware, ES Modules, and backend script utilities."
+          "description": "Express applications, backend utilities, asynchronous programming, and REST services."
         },
         {
           "name": "REST",
           "level": 90,
-          "description": "API contract design, routing protocols, query optimization, and payloads."
+          "description": "Designing, consuming, and integrating APIs between systems and services."
         }
       ]
     },
@@ -114,17 +114,17 @@
         {
           "name": "Azure DevOps",
           "level": 20,
-          "description": "Work item tracking, automated repos, pipeline management, board agile flows."
+          "description": "Source control, work item tracking, boards, and deployment pipelines."
         },
         {
           "name": "ServiceNow",
           "level": 100,
-          "description": "Scoped application design, integration interfaces, workflows, and catalog scripts."
+          "description": "Custom applications, workflows, integrations, catalog development, and platform customization."
         },
         {
           "name": "Git / GitHub",
           "level": 95,
-          "description": "Branching protocols, merge conflicts, actions, PR reviews, tag releases."
+          "description": "Version control, pull requests, branching strategies, releases, and collaboration workflows."
         }
       ]
     },
@@ -134,12 +134,12 @@
         {
           "name": "Azure Services",
           "level": 20,
-          "description": "App Services, Azure Functions, Key Vault, CosmosDB, event integrations."
+          "description": "Working with Azure Functions, App Services, Key Vault, Cosmos DB, and related services."
         },
         {
           "name": "CI/CD Pipelines",
           "level": 20,
-          "description": "Build/release orchestration, self-hosted runners, automated unit testing."
+          "description": "Automating builds, deployments, testing, and release processes."
         }
       ]
     }
@@ -150,11 +150,11 @@
       "role": "Software Engineer",
       "company": "Cegeka",
       "location": "Zoetermeer, The Netherlands",
-      "description": "Led the development and maintenance of a mission-critical .NET framework and B2B integration application facilitating partner asset procurement for physical telecommunications infrastructure.",
+      "description": "Working on a .NET-based platform that supports the ordering and delivery of telecommunications infrastructure and hardware between business partners.",
       "achievements": [
-        "Engineered custom .NET applications to automate the ordering, validation, and tracking of physical hardware assets required for enterprise digital service delivery.",
-        "Streamlined complex external API integrations with telecom partners, ensuring precise hardware configurations and seamless data exchanges across distributed inventory networks.",
-        "Optimized resource allocation and delivery pipeline logic, significantly reducing deployment friction and latency for physical service handovers."
+        "Developed .NET applications that automate the ordering, validation, and tracking of hardware assets used in large-scale telecommunications projects.",
+        "Built and maintained integrations with external telecom partners to exchange data and process hardware orders accurately.",
+        "Improved application workflows and delivery processes, helping reduce delays and manual effort across the platform."
       ],
       "techStack": [
         ".NET Core",
@@ -168,11 +168,11 @@
       "role": "Application Developer",
       "company": "DevoTeam",
       "location": "Amsterdam, The Netherlands",
-      "description": "Led the architectural design and deployment of enterprise Common Service Data Model (CSDM) frameworks and secure API integrations within the ServiceNow platform.",
+      "description": "Worked on ServiceNow implementations, integrations, and data modeling projects for enterprise clients.",
       "achievements": [
-        "Architected and implemented a structured CSDM framework, aligning IT infrastructure with business services to drastically improve configuration item (CI) traceability.",
-        "Designed and engineered secure, high-performance REST/SOAP API integrations to seamlessly synchronize ServiceNow with critical third-party enterprise systems.",
-        "Spearheaded platform security hardening and data access controls, ensuring strict compliance with enterprise governance and data protection standards."
+        "Implemented and refined CSDM structures to improve visibility between business services and technical infrastructure.",
+        "Developed REST and SOAP integrations between ServiceNow and external enterprise systems.",
+        "Contributed to platform security improvements and access control configurations to support governance requirements."
       ],
       "techStack": [
         "ServiceNow",
@@ -188,11 +188,11 @@
       "role": "Application Developer",
       "company": "Cegeka",
       "location": "Zoetermeer, The Netherlands",
-      "description": "Led the technical refinement, architectural design, and end-to-end development of custom ServiceNow solutions orchestrating nationwide digital service delivery.",
+      "description": "Built and maintained custom ServiceNow solutions that supported the delivery of telecommunications and digital services across the Netherlands.",
       "achievements": [
-        "Collaborated with business stakeholders to refine complex functional requirements into production-ready technical architecture on the ServiceNow platform.",
-        "Engineered core workflow automation and orchestration logic responsible for provisioning multi-play digital services, including high-availability internet, VoIP, and security alarm configurations.",
-        "Served as a core technical consultant within a cross-functional team, ensuring platform scalability and alignment with strict enterprise service delivery standards."
+        "Worked closely with business stakeholders to translate requirements into scalable ServiceNow solutions that improved operational efficiency.",
+        "Developed workflow automation and provisioning logic for internet, telephony, and security-related services.",
+        "Provided technical guidance within a multidisciplinary team and contributed to platform improvements and long-term maintainability."
       ],
       "techStack": [
         "ServiceNow",
@@ -208,11 +208,11 @@
       "role": "IT Service Specialist",
       "company": "Solimas",
       "location": "Amsterdam, The Netherlands",
-      "description": "Provided advanced technical support and infrastructure administration within a managed services environment, combining troubleshooting expertise with automation and systems management.",
+      "description": "Supported managed IT environments through infrastructure administration, troubleshooting, and automation.",
       "achievements": [
-        "Resolved high-priority infrastructure and networking incidents impacting business-critical operations and large user groups.",
-        "Developed PowerShell automation scripts to streamline administrative processes and reduce manual effort for recurring tasks.",
-        "Managed server, endpoint, and network environments while serving as an escalation point for complex technical issues."
+        "Resolved infrastructure, networking, and end-user issues affecting business operations.",
+        "Created PowerShell scripts to automate recurring administrative tasks and reduce manual work.",
+        "Managed server, endpoint, and network environments while supporting complex technical escalations."
       ],
       "techStack": [
         "PowerShell",
@@ -228,12 +228,12 @@
       "role": "Service Desk Engineer",
       "company": "PEAK-IT",
       "location": "Naarden, The Netherlands",
-      "description": "Delivered advanced technical support and platform administration within a managed services environment, combining infrastructure expertise with automation and ServiceNow platform development.",
+      "description": "Provided technical support, platform administration, and ServiceNow development within a managed services environment.",
       "achievements": [
-        "Resolved complex infrastructure, application, and end-user incidents across multiple client environments, frequently acting as an escalation point for technical issues.",
-        "Owned application administration and change management activities, authoring RFCs and coordinating the implementation of business-critical system changes.",
-        "Played a key role in the implementation of a new ServiceNow platform, developing custom functionality, workflows, and process improvements to support service delivery operations.",
-        "Leveraged PowerShell scripting to automate recurring administrative tasks and improve operational efficiency."
+        "Resolved complex infrastructure, application, and user support issues across multiple client environments while maintaining high customer satisfaction.",
+        "Managed application changes, created RFCs, and coordinated system updates with stakeholders.",
+        "Helped implement a new ServiceNow platform, including custom workflows and process improvements to support IT service delivery.",
+        "Used PowerShell automation to improve efficiency and reduce repetitive administrative work."
       ],
       "techStack": [
         "ServiceNow",
@@ -249,7 +249,7 @@
   "education": {
     "degree": "Bachelor of Science in Media & Entertainment Management",
     "institution": "Hogeschool InHolland, Haarlem",
-    "description": "A dynamic creative-business degree specializing in film and gaming production, paired with a specialized minor in music industry contract law.",
+    "description": "A business-focused degree with a strong creative foundation in media, film, and game production. Completed a specialized minor focused on music industry contract law.",
     "period": "2019",
     "certifications": [
       {

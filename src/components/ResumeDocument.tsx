@@ -183,7 +183,7 @@ export default function ResumeDocument({ className = '', rootId = 'resume-export
           <div className="pt-1 flex flex-wrap gap-2 text-[10px] font-mono">
             {education.certifications.map((cert) => (
               <span key={cert.name} className="px-2 py-0.5 bg-surface-container border border-outline-variant rounded">
-                {cert.name}
+                {cert.name} • {cert.issuer}
               </span>
             ))}
           </div>
