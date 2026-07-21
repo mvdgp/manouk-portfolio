@@ -2,7 +2,7 @@
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-manoukvandraanen.com-7b5800?style=flat-square)](https://manoukvandraanen.com/)
 
-A clean, responsive personal portfolio website showcasing Manouk van Draanen's engineering work, technical background, and downloadable resume.
+A clean, responsive personal portfolio website showcasing my engineering work, technical background, and downloadable resume.
 
 ## Built With
 
@@ -111,4 +111,4 @@ No license file is currently included in this repository.
 
 ---
 
-Connect with Manouk on [LinkedIn](https://linkedin.com/in/manouk-van-draanen/) or view the code on [GitHub](https://github.com/mvdgp).
+Connect with me on [LinkedIn](https://linkedin.com/in/manouk-van-draanen/) or view the code on [GitHub](https://github.com/mvdgp)!
